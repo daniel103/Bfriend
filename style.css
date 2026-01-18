@@ -178,7 +178,7 @@ body {
 /* Problem Section with Cards */
 .problem-section {
     padding: 6rem 2rem;
-    background: linear-gradient(to bottom, #f8f9fa 0%, #fff 100%);
+    background: linear-gradient(to bottom, #29cfec 0%, #fff 100%);
     position: relative;
 }
 
@@ -413,6 +413,7 @@ body {
 }
 
 .step-item {
+    flex-direction: row;
     margin-bottom: 4rem;
     position: relative;
     display: flex;
@@ -420,9 +421,7 @@ body {
     gap: 2rem;
 }
 
-.step-item:nth-child(odd) {
-    flex-direction: row-reverse;
-}
+
 
 .step-content {
     flex: 1;
@@ -705,7 +704,7 @@ body {
 }
 
 .founders-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
@@ -714,6 +713,7 @@ body {
 .founder-card {
     background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
     padding: 2.5rem;
+    width: 100%;
     border-radius: 25px;
     text-align: center;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -738,7 +738,7 @@ body {
 }
 
 .founder-avatar {
-    width: 145px;
+    width: 150px;
     height: 150px;
     border-radius: 30%;
     margin: 0 auto 1.5rem;
@@ -784,14 +784,18 @@ body {
 }
 
 .contact-section .section-title {
+    margin-top: -35px;
     color: white;
     -webkit-text-fill-color: white;
     text-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .contact-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center !important;
     gap: 4rem;
     margin-top: 3rem;
     align-items: start;
@@ -924,6 +928,9 @@ body {
     text-align: center;
 }
 
+.footer-section h4 {
+    font-size: 3.5rem;
+}
 .footer-bottom {
     text-align: center;
     margin-top: 2rem;
@@ -935,7 +942,7 @@ body {
 .footer-text {
     opacity: 0.8;
     margin-bottom: 0.5rem;
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     line-height: 1.6;
 }
 
@@ -1012,5 +1019,9 @@ body {
 
     .footer-section {
         align-items: center;
+    }
+    .founders-grid {
+        display: flex;
+        flex-direction: column;
     }
 }
