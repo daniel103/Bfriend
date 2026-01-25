@@ -738,8 +738,8 @@ body {
 }
 
 .founder-avatar {
-    width: 150px;
-    height: 150px;
+    width: 126px;
+    height: 129px;
     border-radius: 30%;
     margin: 0 auto 1.5rem;
     display: flex;
@@ -1023,5 +1023,9 @@ body {
     .founders-grid {
         display: flex;
         flex-direction: column;
+    }
+    .founder-avatar {
+        width: 114px;
+        height: 118px;
     }
 }
